@@ -1,0 +1,19 @@
+Assignment-2 
+
+Introducing Relational Databases
+
+
+
+1) Which field of the Customers table is the primary Key?
+Answer-1) CNUM is the field which can be primary key because it has unique values as well as not NULL values.
+
+
+2) What is the 4th column of the Customers table?
+Answer-2) Rating is the fourth column of the Customers Table.
+
+3) What is another word for row? for column?
+Answer-3) In RDBMS rows are also called as tuples , entity and according to business point of view it is also called as opportunity.
+In RDBMS columns are also called as attributes and methods.
+
+4) Why isn't it possible to see the first five rows of the table?
+Answer-4) Inside a table, the rows are not stored sequentially. The rows of a table are scattered (fragmented) all over the DB server HD. The reason why MySQL does this is to speed up the INSERT statement. In a multiuser environment , if multiple users are inserting rows inside the same table simultaneously , if MySQL were to store the rows sequentially , it would be very slow. When you insert into the table, wherever MySQL finds the free space in the Db server HD , it will store the row there. When you SELECT from a table, the order of the rows in the output depends on the row address ; it will always be in Ascending order of row Address. Therefore it's not possible to see the first 5 rows of a table or the last 5 rows of a table.
